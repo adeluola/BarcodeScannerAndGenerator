@@ -1,7 +1,7 @@
 <div class="cam">
-    <zxing-scanner [formats]="allowedFormats"  (scanSuccess)="onCode($event)"></zxing-scanner>
+    <zxing-scanner [formats]="allowedFormats" (scanSuccess)="onCode($event)"></zxing-scanner>
+    <strong>{{resString}}</strong>
 </div>
-<strong>{{resString}}</strong>
-<ngx-barcode [bc-value]= "value" [bc-display-value] = "true"></ngx-barcode>
-<input type = "text" #input><button (click) = "generate(input.value)">generate</button>
+<ngx-barcode [bc-value]="value" [bc-display-value]="true"></ngx-barcode>
+<input type="text" #input><button (click)="generate(input.value)">generate</button>
 <router-outlet></router-outlet>
