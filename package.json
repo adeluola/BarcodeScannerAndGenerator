@@ -7,7 +7,6 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "start:prod": "node server.js",
     "e2e": "ng e2e"
   },
   "private": true,
